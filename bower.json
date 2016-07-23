@@ -1,0 +1,22 @@
+{
+  "name": "ch-externallibraries",
+  "authors": [
+    "Gaitho Mac <gaithoben@icloud.com>"
+  ],
+  "description": "External Libraries to use with polymer elements",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.6",
+    "devextreme": "^16.1.4"
+  }
+}
