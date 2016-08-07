@@ -1,0 +1,236 @@
+/* The Nivo Slider styles */
+.nivoSlider_wrapper {
+  padding: 30px 0 0;
+  margin: 0;
+  width: 870px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.nivoSlider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  background: white url("../images/loading.gif") no-repeat 50% 50%;
+}
+
+.nivoSlider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: none; }
+
+.nivo-main-image {
+  display: block !important;
+  position: relative !important;
+  width: 100% !important; }
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 12;
+  display: none;
+  background: white;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: url("../images/spacer.gif"); }
+
+/* The slices and boxes in the Slider */
+.nivo-slice {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  height: 100%;
+  top: 0; }
+
+.nivo-box {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  overflow: hidden; }
+
+.nivo-box img {
+  display: block; }
+
+/* Caption styles */
+.nivo-caption {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 100%;
+  text-align: left;
+  z-index: 12;
+  padding: 79px 0 0 85px;
+  overflow: hidden;
+  display: none;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */ 
+}
+
+.nivo-caption h2 {
+  padding: 0;
+  position: relative;
+  margin: 0;
+  font-size: 35px;
+  line-height: 42px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: none;
+}
+.nivo-caption h2 b {
+  font-weight: bold;
+  display: block;
+}
+.nivo-caption a {
+  display: inline-block;
+  position: relative;
+  border: 2px solid #fff;
+  webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 46px;
+  font-weight: 700;
+  color: #fff;
+  padding: 0 40px 0 20px;
+  margin-top: 22px;
+}
+.nivo-caption a:after {
+  position: absolute;
+  content: "\f0da";
+  display: inline-block;
+  color: #fff;
+  font-size: 12px;
+  right: 20px;  
+  font-family: "FontAwesome";
+  right: 20px;
+}
+.nivo-caption a:hover {
+  background: #0378b2;
+  color: #fff;
+}
+
+.nivo-html-caption {
+  display: none; }
+
+.offer {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  right: 51px;
+  top: 31px;
+  background: rgba(241, 95, 67, .9);
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 26px;
+  padding-top: 23px;
+  text-transform: capitalize;
+  text-align: center;
+  display: inline-block;
+  webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+}  
+
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav {
+  height: 30px;
+  left: 13px;
+  position: absolute;
+  top: 44%;
+  visibility: hidden;
+  width: 97.5%;
+  z-index: 15;
+}
+
+.nivo-directionNav a {
+  z-index: 9;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.nivo-prevNav,
+.nivo-nextNav {
+  display: inline-block;
+  visibility: visible;
+  padding: 0;
+  color: #333; 
+}
+  .nivo-prevNav:before,
+  .nivo-nextNav:before {
+    content: '\f105';
+    font-family: "FontAwesome";
+    font-size: 35px;
+    color: #fff;
+}
+  .nivo-prevNav:before {
+    content: '\f104';
+    font-family: "FontAwesome";
+    font-size: 35px; 
+  }
+  .nivo-prevNav:hover:before,
+  .nivo-nextNav:hover:before {
+    color: #333;
+  }
+
+.nivo-prevNav {
+  float: left; 
+}
+
+
+.nivo-nextNav {
+  float: right; 
+}
+
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+  position: absolute;
+  z-index: 990;
+  right: 16px;
+  bottom: 20px;
+  overflow: hidden;
+  width: auto;
+  display: block;
+  padding: 0;
+  text-align: center; 
+}
+.nivo-controlNav {
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: bold; 
+}
+.nivo-controlNav a {
+  display: inline-block;
+  width: 15px;
+  height: 16px;
+  text-indent: -9999px;
+  border: 3px solid #595958;
+  margin: 0 4px;
+  cursor: pointer;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px; 
+}
+.nivo-controlNav a:hover, 
+.nivo-controlNav a.active {
+  border: 3px solid #73b134;
+}
+.nivo-controlNav a.active {
+  cursor: default; 
+}
+
+
