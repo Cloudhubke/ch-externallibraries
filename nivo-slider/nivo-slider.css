@@ -42,6 +42,7 @@
   background: white;
   filter: alpha(opacity=0);
   opacity: 0;
+}
 
 /* The slices and boxes in the Slider */
 .nivo-slice {
