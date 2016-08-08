@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <!--Import Multi Step Indicator css-->
+    <link href="assets/css/gsi-step-indicator.min.css" rel="stylesheet" />
+
+    <!--Import  Step Form Wizard css-->
+    <link href="assets/css/tsf-step-form-wizard.min.css" rel="stylesheet" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row"> <h1>Style 2 examples</h1></div>
+    <div class="row">
+        <h3>Example 1</h3>
+        <!-- BEGIN STEP FORM WIZARD -->
+        <div class="tsf-wizard tsf-wizard-1">
+            <!-- BEGIN NAV STEP-->
+            <div class="tsf-nav-step">
+                <!-- BEGIN STEP INDICATOR-->
+                <ul class="gsi-step-indicator triangle gsi-style-1  gsi-transition ">
+                    <li class="current" data-target="step-1">
+                        <a href="#0">
+                            <span class="number">1</span>
+                            <span class="desc">
+                                    <label>Account setup</label>
+                                    <span>Account details</span>
+                                </span>
+                        </a>
+                    </li>
+                    <li data-target="step-2">
+                        <a href="#0">
+                            <span class="number">2</span>
+                            <span class="desc">
+                                    <label>Profile setup</label>
+                                    <span>Profile details</span>
+                                </span>
+                        </a>
+                    </li>
+                    <li data-target="step-3">
+                        <a href="#0">
+                                <span class="number">
+                                    3
+                                </span>
+                            <span class="desc">
+                                    <label>Billing setup</label>
+                                    <span>Credit card details</span>
+                                </span>
+                        </a>
+                    </li>
+                    <li data-target="step-4">
+                        <a href="#0">
+                                <span class="number">
+                                    4
+                                </span>
+                            <span class="desc">
+                                    <label>Agreement</label>
+                                    <span>Our site policy</span>
+                                </span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- END STEP INDICATOR--->
+            </div>
+            <!-- END NAV STEP-->
+            <!-- BEGIN STEP CONTAINER -->
+
+            <div class="tsf-container">
+                <!-- BEGIN CONTENT-->
+                <div class="tsf-content">
+                    <!-- BEGIN STEP 1-->
+                    <div class="tsf-step step-1 active">
+                        <fieldset>
+                            <legend>Provide your account details</legend>
+
+                            <div class="row">
+                                <!-- BEGIN STEP CONTENT-->
+                                <form class="tsf-step-content">
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email</label>
+                                            <input type="email" class="form-control" id="example_username" placeholder="Enter username" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Password again</label>
+                                            <input type="password" class="form-control" id="exampleInputPasswordAgain1" placeholder="Password">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    </div>
+                                </form>
+                                <!-- END STEP CONTENT-->
+                            </div>
+
+                        </fieldset>
+                    </div>
+                    <!-- END STEP 1-->
+                    <!-- BEGIN STEP 2-->
+                    <div class=" tsf-step step-2 ">
+                        <fieldset>
+                            <legend>Provide your profile details</legend>
+                            <!-- BEGIN STEP CONTENT-->
+                            <form class="tsf-step-content">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Fullname </label>
+                                    <input type="email" class="form-control" id="example_Fullname" placeholder="Enter fullname " required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Phone Number</label>
+                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Phone Number">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputAddress">Address</label>
+                                    <input type="text" class="form-control" id="exampleInputAddress" placeholder="Street address">
+                                </div>
+                                <label>Gender </label>
+
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" value="option1" checked="" required="">
+                                        Male
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" value="option2">
+                                        Female
+                                    </label>
+                                </div>
+                            </form>
+                            <!-- END STEP CONTENT-->
+                        </fieldset>
+                    </div>
+                    <!-- END STEP 2-->
+                    <!-- BEGIN STEP 3-->
+                    <div class=" tsf-step step-3 ">
+                        <fieldset>
+                            <legend>Provide your billing and credit card details</legend>
+                            <!-- BEGIN STEP CONTENT-->
+                            <form class="tsf-step-content">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Card Holder Name </label>
+                                    <input type="email" class="form-control" id="example_cardName" placeholder="Enter Card Holder Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Card Number</label>
+                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Card Number">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputAddress">CVC </label>
+                                    <input type="text" class="form-control" id="exampleInputAddress" placeholder="CVC">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputAddress">Expiration(MM/YYYY)</label>
+                                    <input type="text" class="form-control" id="exampleInputAddress" placeholder="MM/YYYY">
+                                </div>
+
+                            </form>
+                            <!-- END STEP CONTENT-->
+
+                        </fieldset>
+                    </div>
+                    <!-- END STEP 3-->
+                    <!-- BEGIN STEP 4-->
+                    <div class="tsf-step step-4">
+                        <fieldset>
+                            <legend>Agreement</legend>
+                            <!-- BEGIN STEP CONTENT-->
+                            <form class="tsf-step-content">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> I read agreement and i have not any objection
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- END STEP CONTENT-->
+                        </fieldset>
+                    </div>
+                    <!-- END STEP 4-->
+
+                </div>
+                <!-- END CONTENT-->
+                <!-- BEGIN CONTROLS-->
+                <div class="tsf-controls ">
+                    <!-- BEGIN PREV BUTTTON-->
+                    <button type="button" data-type="prev" class="btn btn-left tsf-wizard-btn">
+                        <i class="fa fa-chevron-left"></i> PREV
+                    </button>
+                    <!-- END PREV BUTTTON-->
+                    <!-- BEGIN NEXT BUTTTON-->
+                    <button type="button" data-type="next" class="btn btn-right tsf-wizard-btn">
+                        NEXT <i class="fa fa-chevron-right"></i>
+                    </button>
+                    <!-- END NEXT BUTTTON-->
+                    <!-- BEGIN FINISH BUTTTON-->
+                    <button type="button" data-type="finish" class="btn btn-right tsf-wizard-btn">
+                        FINISH
+                    </button>
+                    <!-- END FINISH BUTTTON-->
+                </div>
+                <!-- END CONTROLS-->
+            </div>
+            <!-- END STEP CONTAINER -->
+
+
+        </div>
+        <!-- END STEP FORM WIZARD -->
+
+    </div>
+</div>
+
+
+<script>
+    $(function () {
+        _stepEffect = $('#stepEffect').val();
+        _style = 'style2';
+        _stepTransition = $('#stepTransition').is(':checked');
+        _showButtons = $('#showButtons').is(':checked');
+        _showStepNum = $('#showStepNum').is(':checked');
+
+
+
+        $('.tsf-wizard-1').tsfWizard({
+            stepEffect: _stepEffect,
+            stepStyle: _style,
+            navPosition: 'top',
+            stepTransition: _stepTransition,
+            showButtons: _showButtons,
+            showStepNum: _showStepNum,
+            height: 'auto'
+        });
+    });
+</script>
+
+
+
+</body>
+
+
+</html>
