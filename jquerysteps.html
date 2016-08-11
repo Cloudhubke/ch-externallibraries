@@ -2,17 +2,14 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="UTF-8">
-    <meta name="description" lang="en" content="Timon Step Form Wizard - With Timon - Step Form Wizard you will have power combo of 21 different styles, 8 different transition effects, validation in your step form, titles and subtitles with multiple step, also Timon - Step Form Wizard has predefined set of form sizes from tiny to large. You can easily create and customize any form to fit your needs">
-    <meta name="keywords" lang="en" content="timon,checkout, configuration, form, jquery plugin, multi step, multistep, navigation, registration, responsive, slider form, step, step by step, steps, tabs, wizard">
-    <meta name="robots" content="index, follow">
-    <title>Timon - Step Form Wizard</title>
 
+    <!--Import Multi Step Indicator css-->
     <link href="assets/css/gsi-step-indicator.min.css" rel="stylesheet" />
 
+    <!--Import  Step Form Wizard css-->
     <link href="assets/css/tsf-step-form-wizard.min.css" rel="stylesheet" />
 
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 </head>
@@ -235,21 +232,11 @@
         <!-- END STEP FORM WIZARD -->
 
     </div>
+</div>
 
-
-
-<script src="assets/js/jquery-3.1.0.min.js"></script>
-
-<script src="assets/js/tsf-wizard-plugin.js"></script>
 
 <script>
     $(function () {
-        pageLoadScript();
-    });
-
-
-    function pageLoadScript() {
-
         _stepEffect = $('#stepEffect').val();
         _style = 'style2';
         _stepTransition = $('#stepTransition').is(':checked');
@@ -263,13 +250,13 @@
             stepStyle: _style,
             navPosition: 'top',
             stepTransition: _stepTransition,
-            showButtons: true,
+            showButtons: _showButtons,
             showStepNum: _showStepNum,
             height: 'auto'
         });
-
-    }
+    });
 </script>
+
 
 
 </body>
