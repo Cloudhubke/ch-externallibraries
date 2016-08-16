@@ -1,5 +1,16 @@
-<script type="text/javascript" src="elevatezoom/jquery-1.8.3.min.js"></script>
-<link rel="stylesheet" href="elevatezoom/jquery.fancybox.css"/>
-<script type="text/javascript" src="elevatezoom/jquery.elevatezoom.js"></script>
-<script type="text/javascript" src="elevatezoom/jquery.fancybox.pack.js"></script>
+<script language="javascript" type="text/javascript">
+    var smartDonationsOldJQuery=jQuery;
+    var smartDonationsOldCashSign=$;
+</script>
 
+<link rel="import" href="../ch-externallibraries/jquery-1.8.3.html">
+<script type="text/javascript" src="elevatezoom/jquery.elevatezoom.js"></script>
+<script language="javascript" type="text/javascript">
+    var jq183=jQuery;
+
+    window.jQuery =smartDonationsOldJQuery;
+    window.$ = smartDonationsOldCashSign;
+
+</script>
+<link rel="stylesheet" href="elevatezoom/jquery.fancybox.css"/>
+<script type="text/javascript" src="elevatezoom/jquery.fancybox.pack.js"></script>
