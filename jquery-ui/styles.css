@@ -1,0 +1,188 @@
+
+
+.ui-dialog{
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    top: 50%;
+    left: 50%;
+    text-align: left;
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.2), 1px 3px 15px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform-origin: 50% 25%;
+    -ms-transform-origin: 50% 25%;
+    transform-origin: 50% 25%;
+    border-radius: 0.28571429rem;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    will-change: top, left, margin, transform, opacity;
+}
+
+.ui-dialog:not(.ui-dialog-legacy):focus {
+    outline: 0
+}
+
+.ui-dialog:not(.ui-dialog-legacy) .ui-widget-content {
+    border-color: transparent;
+}
+
+.ui-dialog:not(.ui-dialog-legacy) .ui-dialog-titlebar {
+
+    /*margin: 0 20px 0 20px;*/
+    margin: 0;
+    display: block;
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background: #FFFFFF;
+    padding: 10px 20px 0 20px;
+    box-shadow: none;
+    color: rgba(0, 0, 0, 0.85);
+    border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+
+    font-size: 1.42857143rem;
+    line-height: 1.2857em;
+    font-weight: bold;
+}
+
+.ui-dialog:not(.ui-dialog-legacy) .ui-dialog-titlebar .ui-dialog-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    display: block;
+    color: #222;
+    line-height: 33px;
+    width: 100%;
+}
+
+.ui-dialog:not(.ui-dialog-legacy) .ui-dialog-titlebar .ui-dialog-subtitle {
+    color: #555;
+    font-size: 18px;
+    line-height: 24px;
+    display: none
+}
+
+.ui-dialog:not(.ui-dialog-legacy) .ui-dialog-titlebar-progress-container {
+    position: relative;
+    height: 3px;
+}
+
+.ui-dialog:not(.ui-dialog-legacy) .ui-dialog-titlebar-progress-element {
+    width: 100%;
+    height: 100%;
+    background: url("../../_content/progress.gif");
+}
+
+
+.ui-dialog:not(.ui-dialog-legacy) button.ui-dialog-titlebar-close:hover, .ui-dialog:not(.ui-dialog-legacy) button.ui-dialog-titlebar-close.ui-state-hover {
+    background-color: rgba(255, 255, 255, .2)
+}
+
+.ui-dialog:not(.ui-dialog-legacy) button.ui-dialog-titlebar-close .ui-button-text {
+    display: none
+}
+
+.ui-dialog:not(.ui-dialog-legacy) button.ui-dialog-titlebar-close:focus {
+    box-shadow: none;
+    outline: none;
+    background-color: #e6f3fb
+}
+
+.ui-dialog:not(.ui-dialog-legacy) .ui-dialog-content {
+    margin: 0;
+    overflow: auto;
+    position: relative;
+}
+
+.ui-dialog:not(.ui-dialog-legacy) .ui-dialog-content .content{
+    padding: 10px 20px 40px 20px;
+}
+
+.ui-dialog:not(.ui-dialog-legacy) .ui-dialog-content.no-margin {
+    margin: 0
+}
+
+.ui-dialog:not(.ui-dialog-legacy) .action-pane{
+    background: #F9FAFB;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: right;
+    border-top: 1px solid rgba(34, 36, 38, 0.15);
+}
+
+.ui-dialog:not(.ui-dialog-legacy) .action-pane .actions{
+    position: relative;
+    float: right;
+    padding-right: 20px;
+}
+
+/*.ui-dialog:not(.ui-dialog-legacy) .ui-dialog-buttonpane {*/
+/*text-align: right;*/
+/*margin: 32px 24px 24px 24px;*/
+/*background: red;*/
+/*}*/
+
+.ui-dialog:not(.ui-dialog-legacy) .ui-dialog-buttonpane {
+    text-align: right;
+    margin: 0;
+}
+
+.ui-dialog:not(.ui-dialog-legacy) .ui-dialog-buttonpane .ui-dialog-buttonset {
+    white-space: nowrap;
+    overflow: hidden
+}
+
+.ui-dialog:not(.ui-dialog-legacy) .ui-resizable-se.ui-icon.ui-icon-gripsmall-diagonal-se.ui-icon-grip-diagonal-se {
+
+}
+
+
+.ui-dialog:not(.ui-dialog-legacy) button.ui-dialog-titlebar-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    min-width: 30px;
+    height: 22px;
+    border: 0;
+    margin: 0;
+    background: #FFF;
+}
+
+.ui-dialog .ui-dialog-titlebar-close .ui-button-icon.ui-icon.ui-icon-closethick {
+    font-family: "Material Icons";
+    font-size: 20px;
+    top:3px;
+    margin-right: 0;
+    left:6px;
+    right: 0;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-decoration: none;
+    line-height: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: none !important;
+    text-indent: 0;
+    background-position: 0 !important
+}
+
+.ui-dialog .ui-dialog-titlebar-close .ui-icon.ui-icon-closethick::before {
+    content: "\E14C"
+}
+
+.ui-dialog-content{
+    min-height: 400px;
+    background: yellow;
+}
+
+/*     ================================= End UI Dialog=========================================    */
